@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试mapper</title>
+    <script src="mapper.js"></script>
+</head>
+<body>
+<script>
+    var obj = [{id:1,name:'like'},{id:2,name:'like2'},{id:3,name:'like3'},{id:4,name:'like4'}];
+    var map = new  mapper();
+    map.parse(obj);
+    console.log(map.size());
+    console.log(map.elements);
+    console.log(map.get('c4'));
+
+    console.log(map.elements);
+</script>
+</body>
+</html>
